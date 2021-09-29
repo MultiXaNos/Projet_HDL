@@ -1,0 +1,27 @@
+|Memoire
+In[0] => Out[0]~reg0.DATAIN
+In[1] => Out[1]~reg0.DATAIN
+In[2] => Out[2]~reg0.DATAIN
+In[3] => Out[3]~reg0.DATAIN
+In[4] => Out[4]~reg0.DATAIN
+In[5] => Out[5]~reg0.DATAIN
+In[6] => Out[6]~reg0.DATAIN
+In[7] => Out[7]~reg0.DATAIN
+Gate => Out[0]~reg0.CLK
+Gate => Out[1]~reg0.CLK
+Gate => Out[2]~reg0.CLK
+Gate => Out[3]~reg0.CLK
+Gate => Out[4]~reg0.CLK
+Gate => Out[5]~reg0.CLK
+Gate => Out[6]~reg0.CLK
+Gate => Out[7]~reg0.CLK
+Out[0] <= Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= Out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= Out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= Out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[7] <= Out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

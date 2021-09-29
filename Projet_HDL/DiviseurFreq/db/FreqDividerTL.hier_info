@@ -1,0 +1,81 @@
+|BlockDiviseur
+LEDR[0] <= FreqDividerTL:inst.clkOut
+LEDR[1] <= FreqDividerTL:inst1.clkOut
+CLOCK_50 => FreqDividerTL:inst.clkIn
+CLOCK_50 => FreqDividerTL:inst1.clkIn
+
+
+|BlockDiviseur|FreqDividerTL:inst
+clkIn => clkOut~reg0.CLK
+clkIn => cnt[0].CLK
+clkIn => cnt[1].CLK
+clkIn => cnt[2].CLK
+clkIn => cnt[3].CLK
+clkIn => cnt[4].CLK
+clkIn => cnt[5].CLK
+clkIn => cnt[6].CLK
+clkIn => cnt[7].CLK
+clkIn => cnt[8].CLK
+clkIn => cnt[9].CLK
+clkIn => cnt[10].CLK
+clkIn => cnt[11].CLK
+clkIn => cnt[12].CLK
+clkIn => cnt[13].CLK
+clkIn => cnt[14].CLK
+clkIn => cnt[15].CLK
+clkIn => cnt[16].CLK
+clkIn => cnt[17].CLK
+clkIn => cnt[18].CLK
+clkIn => cnt[19].CLK
+clkIn => cnt[20].CLK
+clkIn => cnt[21].CLK
+clkIn => cnt[22].CLK
+clkIn => cnt[23].CLK
+clkIn => cnt[24].CLK
+clkIn => cnt[25].CLK
+clkIn => cnt[26].CLK
+clkIn => cnt[27].CLK
+clkIn => cnt[28].CLK
+clkIn => cnt[29].CLK
+clkIn => cnt[30].CLK
+clkIn => cnt[31].CLK
+clkOut <= clkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BlockDiviseur|FreqDividerTL:inst1
+clkIn => clkOut~reg0.CLK
+clkIn => cnt[0].CLK
+clkIn => cnt[1].CLK
+clkIn => cnt[2].CLK
+clkIn => cnt[3].CLK
+clkIn => cnt[4].CLK
+clkIn => cnt[5].CLK
+clkIn => cnt[6].CLK
+clkIn => cnt[7].CLK
+clkIn => cnt[8].CLK
+clkIn => cnt[9].CLK
+clkIn => cnt[10].CLK
+clkIn => cnt[11].CLK
+clkIn => cnt[12].CLK
+clkIn => cnt[13].CLK
+clkIn => cnt[14].CLK
+clkIn => cnt[15].CLK
+clkIn => cnt[16].CLK
+clkIn => cnt[17].CLK
+clkIn => cnt[18].CLK
+clkIn => cnt[19].CLK
+clkIn => cnt[20].CLK
+clkIn => cnt[21].CLK
+clkIn => cnt[22].CLK
+clkIn => cnt[23].CLK
+clkIn => cnt[24].CLK
+clkIn => cnt[25].CLK
+clkIn => cnt[26].CLK
+clkIn => cnt[27].CLK
+clkIn => cnt[28].CLK
+clkIn => cnt[29].CLK
+clkIn => cnt[30].CLK
+clkIn => cnt[31].CLK
+clkOut <= clkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

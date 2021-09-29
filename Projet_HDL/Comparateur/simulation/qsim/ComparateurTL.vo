@@ -1,0 +1,196 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition"
+
+// DATE "09/23/2021 17:25:03"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module ComparateurTL (
+	Comp,
+	Out);
+input 	[7:0] Comp;
+output 	Out;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \Out~output_o ;
+wire \Comp[0]~input_o ;
+wire \Comp[1]~input_o ;
+wire \Comp[2]~input_o ;
+wire \Comp[3]~input_o ;
+wire \LessThan0~0_combout ;
+wire \Comp[4]~input_o ;
+wire \Comp[5]~input_o ;
+wire \Comp[6]~input_o ;
+wire \Comp[7]~input_o ;
+wire \LessThan0~1_combout ;
+wire \LessThan0~2_combout ;
+
+
+cycloneive_io_obuf \Out~output (
+	.i(!\LessThan0~2_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Out~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Out~output .bus_hold = "false";
+defparam \Out~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_ibuf \Comp[0]~input (
+	.i(Comp[0]),
+	.ibar(gnd),
+	.o(\Comp[0]~input_o ));
+// synopsys translate_off
+defparam \Comp[0]~input .bus_hold = "false";
+defparam \Comp[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \Comp[1]~input (
+	.i(Comp[1]),
+	.ibar(gnd),
+	.o(\Comp[1]~input_o ));
+// synopsys translate_off
+defparam \Comp[1]~input .bus_hold = "false";
+defparam \Comp[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \Comp[2]~input (
+	.i(Comp[2]),
+	.ibar(gnd),
+	.o(\Comp[2]~input_o ));
+// synopsys translate_off
+defparam \Comp[2]~input .bus_hold = "false";
+defparam \Comp[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \Comp[3]~input (
+	.i(Comp[3]),
+	.ibar(gnd),
+	.o(\Comp[3]~input_o ));
+// synopsys translate_off
+defparam \Comp[3]~input .bus_hold = "false";
+defparam \Comp[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \LessThan0~0 (
+// Equation(s):
+// \LessThan0~0_combout  = (((!\Comp[3]~input_o ) # (!\Comp[2]~input_o )) # (!\Comp[1]~input_o )) # (!\Comp[0]~input_o )
+
+	.dataa(\Comp[0]~input_o ),
+	.datab(\Comp[1]~input_o ),
+	.datac(\Comp[2]~input_o ),
+	.datad(\Comp[3]~input_o ),
+	.cin(gnd),
+	.combout(\LessThan0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \LessThan0~0 .lut_mask = 16'h7FFF;
+defparam \LessThan0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_io_ibuf \Comp[4]~input (
+	.i(Comp[4]),
+	.ibar(gnd),
+	.o(\Comp[4]~input_o ));
+// synopsys translate_off
+defparam \Comp[4]~input .bus_hold = "false";
+defparam \Comp[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \Comp[5]~input (
+	.i(Comp[5]),
+	.ibar(gnd),
+	.o(\Comp[5]~input_o ));
+// synopsys translate_off
+defparam \Comp[5]~input .bus_hold = "false";
+defparam \Comp[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \Comp[6]~input (
+	.i(Comp[6]),
+	.ibar(gnd),
+	.o(\Comp[6]~input_o ));
+// synopsys translate_off
+defparam \Comp[6]~input .bus_hold = "false";
+defparam \Comp[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \Comp[7]~input (
+	.i(Comp[7]),
+	.ibar(gnd),
+	.o(\Comp[7]~input_o ));
+// synopsys translate_off
+defparam \Comp[7]~input .bus_hold = "false";
+defparam \Comp[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \LessThan0~1 (
+// Equation(s):
+// \LessThan0~1_combout  = (!\Comp[4]~input_o  & (!\Comp[5]~input_o  & (!\Comp[6]~input_o  & !\Comp[7]~input_o )))
+
+	.dataa(\Comp[4]~input_o ),
+	.datab(\Comp[5]~input_o ),
+	.datac(\Comp[6]~input_o ),
+	.datad(\Comp[7]~input_o ),
+	.cin(gnd),
+	.combout(\LessThan0~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \LessThan0~1 .lut_mask = 16'h0001;
+defparam \LessThan0~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_lcell_comb \LessThan0~2 (
+// Equation(s):
+// \LessThan0~2_combout  = (\LessThan0~0_combout  & \LessThan0~1_combout )
+
+	.dataa(\LessThan0~0_combout ),
+	.datab(\LessThan0~1_combout ),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\LessThan0~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \LessThan0~2 .lut_mask = 16'h8888;
+defparam \LessThan0~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign Out = \Out~output_o ;
+
+endmodule

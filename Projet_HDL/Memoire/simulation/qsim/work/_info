@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Projet_HDL/Memoire/simulation/qsim
+vMemoire
+Z1 !s110 1632748423
+!i10b 1
+!s100 E>Ngz6eA:MKgW:<WSIWY^2
+Ill:_X0e5Cjh;KgUNGGcQP1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1632748420
+8Memoire.vo
+FMemoire.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1632748422.000000
+!s107 Memoire.vo|
+!s90 -work|work|Memoire.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@memoire
+vMemoire_vlg_vec_tst
+R1
+!i10b 1
+!s100 >QdQe3?R@l:<j]h[c84Ei3
+I[P`nR:Yhd_>:Kz=?A0]LC0
+R2
+R0
+w1632748418
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1632748423.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+n@memoire_vlg_vec_tst

@@ -1,0 +1,6 @@
+module Memoire(In, Gate, Out);
+
+parameter BUS_SIZE = 8;
+parameter GATE_POLARITY = 0;
+
+endmodule;

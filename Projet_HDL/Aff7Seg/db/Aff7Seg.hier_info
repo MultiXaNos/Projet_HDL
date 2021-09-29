@@ -1,0 +1,28 @@
+|Block1
+HEX0[0] <= Aff7Seg:inst.Seg[0]
+HEX0[1] <= Aff7Seg:inst.Seg[1]
+HEX0[2] <= Aff7Seg:inst.Seg[2]
+HEX0[3] <= Aff7Seg:inst.Seg[3]
+HEX0[4] <= Aff7Seg:inst.Seg[4]
+HEX0[5] <= Aff7Seg:inst.Seg[5]
+HEX0[6] <= Aff7Seg:inst.Seg[6]
+SW[0] => Aff7Seg:inst.NbIn[0]
+SW[1] => Aff7Seg:inst.NbIn[1]
+SW[2] => Aff7Seg:inst.NbIn[2]
+SW[3] => Aff7Seg:inst.NbIn[3]
+
+
+|Block1|Aff7Seg:inst
+NbIn[0] => Decoder0.IN3
+NbIn[1] => Decoder0.IN2
+NbIn[2] => Decoder0.IN1
+NbIn[3] => Decoder0.IN0
+Seg[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Seg[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Seg[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Seg[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Seg[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Seg[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

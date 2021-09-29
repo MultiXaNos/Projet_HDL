@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Quartus_TP4/Comparateur/ComparateurTL.v
+source_file = 1, C:/Quartus_TP4/Comparateur/db/ComparateurTL.cbx.xml
+design_name = ComparateurTL
+instance = comp, \Out~output , Out~output, ComparateurTL, 1
+instance = comp, \Comp[0]~input , Comp[0]~input, ComparateurTL, 1
+instance = comp, \Comp[1]~input , Comp[1]~input, ComparateurTL, 1
+instance = comp, \Comp[2]~input , Comp[2]~input, ComparateurTL, 1
+instance = comp, \Comp[3]~input , Comp[3]~input, ComparateurTL, 1
+instance = comp, \LessThan0~0 , LessThan0~0, ComparateurTL, 1
+instance = comp, \Comp[4]~input , Comp[4]~input, ComparateurTL, 1
+instance = comp, \Comp[5]~input , Comp[5]~input, ComparateurTL, 1
+instance = comp, \Comp[6]~input , Comp[6]~input, ComparateurTL, 1
+instance = comp, \Comp[7]~input , Comp[7]~input, ComparateurTL, 1
+instance = comp, \LessThan0~1 , LessThan0~1, ComparateurTL, 1
+instance = comp, \LessThan0~2 , LessThan0~2, ComparateurTL, 1

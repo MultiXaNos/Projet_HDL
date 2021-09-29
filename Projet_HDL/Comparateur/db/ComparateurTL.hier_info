@@ -1,0 +1,12 @@
+|ComparateurTL
+Comp[0] => LessThan0.IN16
+Comp[1] => LessThan0.IN15
+Comp[2] => LessThan0.IN14
+Comp[3] => LessThan0.IN13
+Comp[4] => LessThan0.IN12
+Comp[5] => LessThan0.IN11
+Comp[6] => LessThan0.IN10
+Comp[7] => LessThan0.IN9
+Out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+

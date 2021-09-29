@@ -1,0 +1,414 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition"
+
+// DATE "09/27/2021 15:13:40"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Memoire (
+	In,
+	Gate,
+	Out);
+input 	[7:0] In;
+input 	Gate;
+output 	[7:0] Out;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \Out[0]~output_o ;
+wire \Out[1]~output_o ;
+wire \Out[2]~output_o ;
+wire \Out[3]~output_o ;
+wire \Out[4]~output_o ;
+wire \Out[5]~output_o ;
+wire \Out[6]~output_o ;
+wire \Out[7]~output_o ;
+wire \Gate~input_o ;
+wire \In[0]~input_o ;
+wire \Out[0]~reg0_q ;
+wire \In[1]~input_o ;
+wire \Out[1]~reg0_q ;
+wire \In[2]~input_o ;
+wire \Out[2]~reg0_q ;
+wire \In[3]~input_o ;
+wire \Out[3]~reg0_q ;
+wire \In[4]~input_o ;
+wire \Out[4]~reg0_q ;
+wire \In[5]~input_o ;
+wire \Out[5]~reg0_q ;
+wire \In[6]~input_o ;
+wire \Out[6]~reg0_q ;
+wire \In[7]~input_o ;
+wire \Out[7]~reg0_q ;
+
+
+cycloneive_io_obuf \Out[0]~output (
+	.i(\Out[0]~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Out[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Out[0]~output .bus_hold = "false";
+defparam \Out[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \Out[1]~output (
+	.i(\Out[1]~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Out[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Out[1]~output .bus_hold = "false";
+defparam \Out[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \Out[2]~output (
+	.i(\Out[2]~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Out[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Out[2]~output .bus_hold = "false";
+defparam \Out[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \Out[3]~output (
+	.i(\Out[3]~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Out[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Out[3]~output .bus_hold = "false";
+defparam \Out[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \Out[4]~output (
+	.i(\Out[4]~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Out[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Out[4]~output .bus_hold = "false";
+defparam \Out[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \Out[5]~output (
+	.i(\Out[5]~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Out[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Out[5]~output .bus_hold = "false";
+defparam \Out[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \Out[6]~output (
+	.i(\Out[6]~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Out[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Out[6]~output .bus_hold = "false";
+defparam \Out[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \Out[7]~output (
+	.i(\Out[7]~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Out[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Out[7]~output .bus_hold = "false";
+defparam \Out[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_ibuf \Gate~input (
+	.i(Gate),
+	.ibar(gnd),
+	.o(\Gate~input_o ));
+// synopsys translate_off
+defparam \Gate~input .bus_hold = "false";
+defparam \Gate~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \In[0]~input (
+	.i(In[0]),
+	.ibar(gnd),
+	.o(\In[0]~input_o ));
+// synopsys translate_off
+defparam \In[0]~input .bus_hold = "false";
+defparam \In[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas \Out[0]~reg0 (
+	.clk(!\Gate~input_o ),
+	.d(\In[0]~input_o ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\Out[0]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \Out[0]~reg0 .is_wysiwyg = "true";
+defparam \Out[0]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cycloneive_io_ibuf \In[1]~input (
+	.i(In[1]),
+	.ibar(gnd),
+	.o(\In[1]~input_o ));
+// synopsys translate_off
+defparam \In[1]~input .bus_hold = "false";
+defparam \In[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas \Out[1]~reg0 (
+	.clk(!\Gate~input_o ),
+	.d(\In[1]~input_o ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\Out[1]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \Out[1]~reg0 .is_wysiwyg = "true";
+defparam \Out[1]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cycloneive_io_ibuf \In[2]~input (
+	.i(In[2]),
+	.ibar(gnd),
+	.o(\In[2]~input_o ));
+// synopsys translate_off
+defparam \In[2]~input .bus_hold = "false";
+defparam \In[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas \Out[2]~reg0 (
+	.clk(!\Gate~input_o ),
+	.d(\In[2]~input_o ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\Out[2]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \Out[2]~reg0 .is_wysiwyg = "true";
+defparam \Out[2]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cycloneive_io_ibuf \In[3]~input (
+	.i(In[3]),
+	.ibar(gnd),
+	.o(\In[3]~input_o ));
+// synopsys translate_off
+defparam \In[3]~input .bus_hold = "false";
+defparam \In[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas \Out[3]~reg0 (
+	.clk(!\Gate~input_o ),
+	.d(\In[3]~input_o ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\Out[3]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \Out[3]~reg0 .is_wysiwyg = "true";
+defparam \Out[3]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cycloneive_io_ibuf \In[4]~input (
+	.i(In[4]),
+	.ibar(gnd),
+	.o(\In[4]~input_o ));
+// synopsys translate_off
+defparam \In[4]~input .bus_hold = "false";
+defparam \In[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas \Out[4]~reg0 (
+	.clk(!\Gate~input_o ),
+	.d(\In[4]~input_o ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\Out[4]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \Out[4]~reg0 .is_wysiwyg = "true";
+defparam \Out[4]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cycloneive_io_ibuf \In[5]~input (
+	.i(In[5]),
+	.ibar(gnd),
+	.o(\In[5]~input_o ));
+// synopsys translate_off
+defparam \In[5]~input .bus_hold = "false";
+defparam \In[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas \Out[5]~reg0 (
+	.clk(!\Gate~input_o ),
+	.d(\In[5]~input_o ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\Out[5]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \Out[5]~reg0 .is_wysiwyg = "true";
+defparam \Out[5]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cycloneive_io_ibuf \In[6]~input (
+	.i(In[6]),
+	.ibar(gnd),
+	.o(\In[6]~input_o ));
+// synopsys translate_off
+defparam \In[6]~input .bus_hold = "false";
+defparam \In[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas \Out[6]~reg0 (
+	.clk(!\Gate~input_o ),
+	.d(\In[6]~input_o ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\Out[6]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \Out[6]~reg0 .is_wysiwyg = "true";
+defparam \Out[6]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cycloneive_io_ibuf \In[7]~input (
+	.i(In[7]),
+	.ibar(gnd),
+	.o(\In[7]~input_o ));
+// synopsys translate_off
+defparam \In[7]~input .bus_hold = "false";
+defparam \In[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas \Out[7]~reg0 (
+	.clk(!\Gate~input_o ),
+	.d(\In[7]~input_o ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\Out[7]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \Out[7]~reg0 .is_wysiwyg = "true";
+defparam \Out[7]~reg0 .power_up = "low";
+// synopsys translate_on
+
+assign Out[0] = \Out[0]~output_o ;
+
+assign Out[1] = \Out[1]~output_o ;
+
+assign Out[2] = \Out[2]~output_o ;
+
+assign Out[3] = \Out[3]~output_o ;
+
+assign Out[4] = \Out[4]~output_o ;
+
+assign Out[5] = \Out[5]~output_o ;
+
+assign Out[6] = \Out[6]~output_o ;
+
+assign Out[7] = \Out[7]~output_o ;
+
+endmodule

@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Quartus_work/Split/simulation/qsim
+vSplitByDecTL
+!s110 1632747714
+!i10b 1
+!s100 2<=U;VWD7cEnRWXcjkb201
+IP70LWK<UjO^`LaNl7YACQ3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1632747712
+8SplitByDecTL.vo
+FSplitByDecTL.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1632747714.000000
+!s107 SplitByDecTL.vo|
+!s90 -work|work|SplitByDecTL.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@split@by@dec@t@l
+vSplitByDecTL_vlg_vec_tst
+!s110 1632747715
+!i10b 1
+!s100 HSfmM78z1XeA6=IYMA`cb2
+IRHXkX5NRj0S=1U:fAIEXj2
+R1
+R0
+w1632747710
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R2
+r1
+!s85 0
+31
+R3
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+n@split@by@dec@t@l_vlg_vec_tst

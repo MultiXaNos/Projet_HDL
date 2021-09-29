@@ -1,0 +1,5 @@
+module Telemetre_DE2115(CLOCK_50, GPIO[0], HEX0, HEX1, HEX2);
+
+
+
+endmodule

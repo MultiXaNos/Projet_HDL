@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Sep 28 16:00:28 2021
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Telemetre_DE2115
+Top-level Entity Name : Telemetre_DE2115
+Family : Cyclone IV E
+Total logic elements : 217
+    Total combinational functions : 208
+    Dedicated logic registers : 31
+Total registers : 31
+Total pins : 76
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

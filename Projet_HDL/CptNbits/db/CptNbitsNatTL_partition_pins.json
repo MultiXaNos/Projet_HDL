@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Cpt[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Sens",
+					"strict" : false
+				},
+				{
+					"name" : "nReset",
+					"strict" : false
+				},
+				{
+					"name" : "nSet",
+					"strict" : false
+				},
+				{
+					"name" : "Clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

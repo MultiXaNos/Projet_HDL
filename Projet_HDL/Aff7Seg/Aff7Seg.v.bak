@@ -1,0 +1,8 @@
+module Aff7Seg(NbIn, Seg);
+
+input[3:0] NbIn;
+output[6:0] Seg;
+
+
+
+endmodule

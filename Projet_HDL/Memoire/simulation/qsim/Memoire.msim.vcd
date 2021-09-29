@@ -1,0 +1,448 @@
+$comment
+	File created using the following command:
+		vcd file Memoire.msim.vcd -direction
+$end
+$date
+	Mon Sep 27 15:13:44 2021
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module Memoire_vlg_vec_tst $end
+$var reg 1 ! Gate $end
+$var reg 8 " In [7:0] $end
+$var wire 1 # Out [7] $end
+$var wire 1 $ Out [6] $end
+$var wire 1 % Out [5] $end
+$var wire 1 & Out [4] $end
+$var wire 1 ' Out [3] $end
+$var wire 1 ( Out [2] $end
+$var wire 1 ) Out [1] $end
+$var wire 1 * Out [0] $end
+
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 Out[0]~output_o $end
+$var wire 1 2 Out[1]~output_o $end
+$var wire 1 3 Out[2]~output_o $end
+$var wire 1 4 Out[3]~output_o $end
+$var wire 1 5 Out[4]~output_o $end
+$var wire 1 6 Out[5]~output_o $end
+$var wire 1 7 Out[6]~output_o $end
+$var wire 1 8 Out[7]~output_o $end
+$var wire 1 9 Gate~input_o $end
+$var wire 1 : In[0]~input_o $end
+$var wire 1 ; Out[0]~reg0_q $end
+$var wire 1 < In[1]~input_o $end
+$var wire 1 = Out[1]~reg0_q $end
+$var wire 1 > In[2]~input_o $end
+$var wire 1 ? Out[2]~reg0_q $end
+$var wire 1 @ In[3]~input_o $end
+$var wire 1 A Out[3]~reg0_q $end
+$var wire 1 B In[4]~input_o $end
+$var wire 1 C Out[4]~reg0_q $end
+$var wire 1 D In[5]~input_o $end
+$var wire 1 E Out[5]~reg0_q $end
+$var wire 1 F In[6]~input_o $end
+$var wire 1 G Out[6]~reg0_q $end
+$var wire 1 H In[7]~input_o $end
+$var wire 1 I Out[7]~reg0_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+b10010100 "
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0+
+1,
+x-
+1.
+1/
+10
+01
+02
+03
+04
+05
+06
+07
+08
+19
+0:
+0;
+0<
+0=
+1>
+0?
+0@
+0A
+1B
+0C
+0D
+0E
+0F
+0G
+1H
+0I
+$end
+#2500000
+0!
+09
+1?
+1C
+1I
+18
+15
+13
+1(
+1&
+1#
+#5000000
+b10110100 "
+b10100100 "
+b10101100 "
+b10101000 "
+b10101010 "
+1<
+0>
+1@
+0B
+1D
+#7500000
+1!
+19
+#10000000
+b101010 "
+b111010 "
+b110010 "
+b110110 "
+b110100 "
+0<
+1>
+0@
+1B
+0H
+#12500000
+0!
+09
+1E
+0I
+08
+16
+1%
+0#
+#15000000
+b110101 "
+b10101 "
+b10010101 "
+b10000101 "
+1:
+0B
+0D
+1H
+#17500000
+1!
+19
+#20000000
+b10000100 "
+b100 "
+0:
+0H
+#22500000
+0!
+09
+0C
+0E
+06
+05
+0&
+0%
+#25000000
+b1000100 "
+b1010100 "
+b1010101 "
+b11010101 "
+1:
+1B
+1F
+1H
+#27500000
+1!
+19
+#30000000
+b11011101 "
+b11011001 "
+b11011011 "
+b11001011 "
+1<
+0>
+1@
+0B
+#32500000
+0!
+09
+1;
+1=
+0?
+1A
+1G
+1I
+18
+17
+14
+03
+12
+11
+1*
+1)
+0(
+1'
+1$
+1#
+#35000000
+b11101011 "
+b10101011 "
+b10100011 "
+b10100111 "
+b10100101 "
+0<
+1>
+0@
+1D
+0F
+#37500000
+1!
+19
+#40000000
+b100101 "
+b110101 "
+b110111 "
+1<
+1B
+0H
+#42500000
+0!
+09
+1?
+0A
+1C
+1E
+0G
+0I
+08
+07
+16
+15
+04
+13
+1(
+0'
+1&
+1%
+0$
+0#
+#45000000
+b10111 "
+b1010111 "
+b1011111 "
+b1001111 "
+1@
+0B
+0D
+1F
+#47500000
+1!
+19
+#50000000
+b1001011 "
+b1101011 "
+b1111011 "
+0>
+1B
+1D
+#52500000
+0!
+09
+0?
+1A
+1G
+17
+14
+03
+0(
+1'
+1$
+#55000000
+b11111011 "
+b11111001 "
+b11111101 "
+0<
+1>
+1H
+#57500000
+1!
+19
+#60000000
+b10111101 "
+b10101101 "
+b10101001 "
+0>
+0B
+0F
+#62500000
+0!
+09
+0=
+0C
+0G
+1I
+18
+07
+05
+02
+0)
+0&
+0$
+1#
+#65000000
+b10101000 "
+b10100000 "
+b10000000 "
+b0 "
+b10 "
+b10010 "
+b10110 "
+0:
+1<
+1>
+0@
+1B
+0D
+0H
+#67500000
+1!
+19
+#70000000
+b1010110 "
+b1010111 "
+b1010011 "
+1:
+0>
+1F
+#72500000
+0!
+09
+1=
+0A
+1C
+0E
+1G
+0I
+08
+17
+06
+15
+04
+12
+1)
+0'
+1&
+0%
+1$
+0#
+#75000000
+b11010011 "
+b11000011 "
+b10000011 "
+b10000010 "
+0:
+0B
+0F
+1H
+#77500000
+1!
+19
+#80000000
+b10100010 "
+b10100000 "
+b10100100 "
+b100100 "
+b1100100 "
+b1100101 "
+1:
+0<
+1>
+1D
+1F
+0H
+#82500000
+0!
+09
+0=
+1?
+0C
+1E
+16
+05
+13
+02
+0)
+1(
+0&
+1%
+#87500000
+1!
+19
+#90000000
+b1101101 "
+b1001101 "
+b11001101 "
+b11001100 "
+0:
+1@
+0D
+1H
+#92500000
+0!
+09
+0;
+1A
+0E
+1I
+18
+06
+14
+01
+0*
+1'
+0%
+1#
+#95000000
+b11001110 "
+b10001110 "
+b10001111 "
+1:
+1<
+0F
+#97500000
+1!
+19
+#100000000

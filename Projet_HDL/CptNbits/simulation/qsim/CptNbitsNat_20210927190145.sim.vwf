@@ -1,0 +1,463 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 100000.0;
+	SIMULATION_TIME = 0.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 10.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("Clk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Cpt")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("Cpt[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Cpt";
+}
+
+SIGNAL("Cpt[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Cpt";
+}
+
+SIGNAL("Cpt[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Cpt";
+}
+
+SIGNAL("Cpt[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Cpt";
+}
+
+SIGNAL("Sens")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("nReset")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("nSet")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("Clk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+			LEVEL 0 FOR 1250.0;
+			LEVEL 1 FOR 1250.0;
+		}
+	}
+}
+
+TRANSITION_LIST("Cpt[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 10000.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 15000.0;
+			LEVEL 1 FOR 2500.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 2500.0;
+		}
+	}
+}
+
+TRANSITION_LIST("Cpt[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 7500.0;
+			LEVEL 0 FOR 5000.0;
+			LEVEL 1 FOR 5000.0;
+			LEVEL 0 FOR 5000.0;
+			LEVEL 1 FOR 5000.0;
+			LEVEL 0 FOR 10000.0;
+			LEVEL 1 FOR 5000.0;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 5000.0;
+			LEVEL 0 FOR 10000.0;
+			LEVEL 1 FOR 5000.0;
+			LEVEL 0 FOR 5000.0;
+			LEVEL 1 FOR 5000.0;
+			LEVEL 0 FOR 17500.0;
+			LEVEL 1 FOR 5000.0;
+		}
+	}
+}
+
+TRANSITION_LIST("Cpt[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 15000.0;
+			LEVEL 1 FOR 10000.0;
+			LEVEL 0 FOR 15000.0;
+			LEVEL 1 FOR 12500.0;
+			LEVEL 0 FOR 15000.0;
+			LEVEL 1 FOR 10000.0;
+			LEVEL 0 FOR 22500.0;
+		}
+	}
+}
+
+TRANSITION_LIST("Cpt[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 2500.0;
+			LEVEL 1 FOR 12500.0;
+			LEVEL 0 FOR 20000.0;
+			LEVEL 1 FOR 5000.0;
+			LEVEL 0 FOR 12500.0;
+			LEVEL 1 FOR 5000.0;
+			LEVEL 0 FOR 42500.0;
+		}
+	}
+}
+
+TRANSITION_LIST("Sens")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 1 FOR 47360.0;
+			LEVEL 0 FOR 52640.0;
+		}
+	}
+}
+
+TRANSITION_LIST("nReset")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 1 FOR 76160.0;
+			LEVEL 0 FOR 14080.0;
+			LEVEL 1 FOR 9760.0;
+		}
+	}
+}
+
+TRANSITION_LIST("nSet")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 1 FOR 1280.0;
+			LEVEL 0 FOR 7680.0;
+			LEVEL 1 FOR 91040.0;
+		}
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Clk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sens";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "nReset";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "nSet";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Cpt";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 0;
+	CHILDREN = 5, 6, 7, 8;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Cpt[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Cpt[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Cpt[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 1;
+	PARENT = 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Cpt[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 1;
+	PARENT = 4;
+}
+
+TIME_BAR
+{
+	TIME = 0;
+	MASTER = TRUE;
+}
+;

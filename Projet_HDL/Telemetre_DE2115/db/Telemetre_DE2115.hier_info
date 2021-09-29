@@ -1,0 +1,266 @@
+|Telemetre_DE2115
+CLOCK_50 => CLOCK_50.IN1
+GPIO[0] => GPIO[0].IN1
+GPIO[1] => ~NO_FANOUT~
+GPIO[2] => ~NO_FANOUT~
+GPIO[3] => ~NO_FANOUT~
+GPIO[4] => ~NO_FANOUT~
+GPIO[5] => ~NO_FANOUT~
+GPIO[6] => ~NO_FANOUT~
+GPIO[7] => ~NO_FANOUT~
+GPIO[8] => ~NO_FANOUT~
+GPIO[9] => ~NO_FANOUT~
+GPIO[10] => ~NO_FANOUT~
+GPIO[11] => ~NO_FANOUT~
+GPIO[12] => ~NO_FANOUT~
+GPIO[13] => ~NO_FANOUT~
+GPIO[14] => ~NO_FANOUT~
+GPIO[15] => ~NO_FANOUT~
+GPIO[16] => ~NO_FANOUT~
+GPIO[17] => ~NO_FANOUT~
+GPIO[18] => ~NO_FANOUT~
+GPIO[19] => ~NO_FANOUT~
+GPIO[20] => ~NO_FANOUT~
+GPIO[21] => ~NO_FANOUT~
+GPIO[22] => ~NO_FANOUT~
+GPIO[23] => ~NO_FANOUT~
+GPIO[24] => ~NO_FANOUT~
+GPIO[25] => ~NO_FANOUT~
+GPIO[26] => ~NO_FANOUT~
+GPIO[27] => ~NO_FANOUT~
+GPIO[28] => ~NO_FANOUT~
+GPIO[29] => ~NO_FANOUT~
+GPIO[30] => ~NO_FANOUT~
+GPIO[31] => ~NO_FANOUT~
+GPIO[32] => ~NO_FANOUT~
+GPIO[33] => ~NO_FANOUT~
+GPIO[34] => ~NO_FANOUT~
+GPIO[35] => ~NO_FANOUT~
+HEX0[6] << Telemetre:Tel.port2
+HEX0[5] << Telemetre:Tel.port2
+HEX0[4] << Telemetre:Tel.port2
+HEX0[3] << Telemetre:Tel.port2
+HEX0[2] << Telemetre:Tel.port2
+HEX0[1] << Telemetre:Tel.port2
+HEX0[0] << Telemetre:Tel.port2
+HEX1[6] << Telemetre:Tel.port3
+HEX1[5] << Telemetre:Tel.port3
+HEX1[4] << Telemetre:Tel.port3
+HEX1[3] << Telemetre:Tel.port3
+HEX1[2] << Telemetre:Tel.port3
+HEX1[1] << Telemetre:Tel.port3
+HEX1[0] << Telemetre:Tel.port3
+HEX2[6] << Telemetre:Tel.port4
+HEX2[5] << Telemetre:Tel.port4
+HEX2[4] << Telemetre:Tel.port4
+HEX2[3] << Telemetre:Tel.port4
+HEX2[2] << Telemetre:Tel.port4
+HEX2[1] << Telemetre:Tel.port4
+HEX2[0] << Telemetre:Tel.port4
+LEDR[0] << Telemetre:Tel.port5
+LEDR[1] << <GND>
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+LEDR[10] << <GND>
+LEDR[11] << <GND>
+LEDR[12] << <GND>
+LEDR[13] << <GND>
+LEDR[14] << <GND>
+LEDR[15] << <GND>
+LEDR[16] << <GND>
+LEDR[17] << <GND>
+
+
+|Telemetre_DE2115|Telemetre:Tel
+Clk => Clk.IN1
+Gate => Gate.IN2
+A1[6] <= Aff7Seg:Aff1.port1
+A1[5] <= Aff7Seg:Aff1.port1
+A1[4] <= Aff7Seg:Aff1.port1
+A1[3] <= Aff7Seg:Aff1.port1
+A1[2] <= Aff7Seg:Aff1.port1
+A1[1] <= Aff7Seg:Aff1.port1
+A1[0] <= Aff7Seg:Aff1.port1
+A2[6] <= Aff7Seg:Aff2.port1
+A2[5] <= Aff7Seg:Aff2.port1
+A2[4] <= Aff7Seg:Aff2.port1
+A2[3] <= Aff7Seg:Aff2.port1
+A2[2] <= Aff7Seg:Aff2.port1
+A2[1] <= Aff7Seg:Aff2.port1
+A2[0] <= Aff7Seg:Aff2.port1
+A3[6] <= Aff7Seg:Aff3.port1
+A3[5] <= Aff7Seg:Aff3.port1
+A3[4] <= Aff7Seg:Aff3.port1
+A3[3] <= Aff7Seg:Aff3.port1
+A3[2] <= Aff7Seg:Aff3.port1
+A3[1] <= Aff7Seg:Aff3.port1
+A3[0] <= Aff7Seg:Aff3.port1
+Led <= ComparateurTL:CompDist.port1
+
+
+|Telemetre_DE2115|Telemetre:Tel|FreqDividerTL:Diviseur
+clkIn => clkOut~reg0.CLK
+clkIn => cnt[0].CLK
+clkIn => cnt[1].CLK
+clkIn => cnt[2].CLK
+clkIn => cnt[3].CLK
+clkIn => cnt[4].CLK
+clkIn => cnt[5].CLK
+clkIn => cnt[6].CLK
+clkIn => cnt[7].CLK
+clkIn => cnt[8].CLK
+clkIn => cnt[9].CLK
+clkIn => cnt[10].CLK
+clkIn => cnt[11].CLK
+clkIn => cnt[12].CLK
+clkOut <= clkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Telemetre_DE2115|Telemetre:Tel|CptNBitsNatTL:CntDist
+Clk => nReset_prec.CLK
+Clk => Q[0]~reg0.CLK
+Clk => Q[1]~reg0.CLK
+Clk => Q[2]~reg0.CLK
+Clk => Q[3]~reg0.CLK
+Clk => Q[4]~reg0.CLK
+Clk => Q[5]~reg0.CLK
+Clk => Q[6]~reg0.CLK
+Clk => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nSet => Q.OUTPUTSELECT
+nSet => Q.OUTPUTSELECT
+nSet => Q.OUTPUTSELECT
+nSet => Q.OUTPUTSELECT
+nSet => Q.OUTPUTSELECT
+nSet => Q.OUTPUTSELECT
+nSet => Q.OUTPUTSELECT
+nSet => Q.OUTPUTSELECT
+nReset => always0.IN1
+nReset => nReset_prec.DATAIN
+
+
+|Telemetre_DE2115|Telemetre:Tel|Memoire:Mem
+In[0] => Out[0]~reg0.DATAIN
+In[1] => Out[1]~reg0.DATAIN
+In[2] => Out[2]~reg0.DATAIN
+In[3] => Out[3]~reg0.DATAIN
+In[4] => Out[4]~reg0.DATAIN
+In[5] => Out[5]~reg0.DATAIN
+In[6] => Out[6]~reg0.DATAIN
+In[7] => Out[7]~reg0.DATAIN
+Gate => Out[0]~reg0.CLK
+Gate => Out[1]~reg0.CLK
+Gate => Out[2]~reg0.CLK
+Gate => Out[3]~reg0.CLK
+Gate => Out[4]~reg0.CLK
+Gate => Out[5]~reg0.CLK
+Gate => Out[6]~reg0.CLK
+Gate => Out[7]~reg0.CLK
+Out[0] <= Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= Out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= Out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= Out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out[7] <= Out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Telemetre_DE2115|Telemetre:Tel|ComparateurTL:CompDist
+Comp[0] => LessThan0.IN16
+Comp[1] => LessThan0.IN15
+Comp[2] => LessThan0.IN14
+Comp[3] => LessThan0.IN13
+Comp[4] => LessThan0.IN12
+Comp[5] => LessThan0.IN11
+Comp[6] => LessThan0.IN10
+Comp[7] => LessThan0.IN9
+Out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Telemetre_DE2115|Telemetre:Tel|SplitByDecTL:Spliter
+Dist[0] => Div0.IN14
+Dist[0] => Add0.IN22
+Dist[1] => Div0.IN13
+Dist[1] => Add0.IN21
+Dist[2] => Div0.IN12
+Dist[2] => Add0.IN20
+Dist[3] => Div0.IN11
+Dist[3] => Add0.IN19
+Dist[4] => Div0.IN10
+Dist[4] => Add0.IN18
+Dist[5] => Div0.IN9
+Dist[5] => Add0.IN17
+Dist[6] => Div0.IN8
+Dist[6] => Add0.IN16
+Dist[7] => Div0.IN7
+Dist[7] => Add0.IN15
+S1[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+S1[1] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+S1[2] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+S1[3] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+S2[0] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+S2[1] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+S2[2] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+S2[3] <= Div1.DB_MAX_OUTPUT_PORT_TYPE
+S3[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+S3[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+S3[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+S3[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Telemetre_DE2115|Telemetre:Tel|Aff7Seg:Aff1
+NbIn[0] => Decoder0.IN3
+NbIn[1] => Decoder0.IN2
+NbIn[2] => Decoder0.IN1
+NbIn[3] => Decoder0.IN0
+Seg[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Seg[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Seg[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Seg[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Seg[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Seg[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Telemetre_DE2115|Telemetre:Tel|Aff7Seg:Aff2
+NbIn[0] => Decoder0.IN3
+NbIn[1] => Decoder0.IN2
+NbIn[2] => Decoder0.IN1
+NbIn[3] => Decoder0.IN0
+Seg[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Seg[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Seg[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Seg[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Seg[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Seg[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Telemetre_DE2115|Telemetre:Tel|Aff7Seg:Aff3
+NbIn[0] => Decoder0.IN3
+NbIn[1] => Decoder0.IN2
+NbIn[2] => Decoder0.IN1
+NbIn[3] => Decoder0.IN0
+Seg[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Seg[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Seg[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Seg[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Seg[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Seg[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

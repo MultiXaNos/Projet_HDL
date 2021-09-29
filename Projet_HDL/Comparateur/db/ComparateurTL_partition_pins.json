@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Out",
+					"strict" : false
+				},
+				{
+					"name" : "Comp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Comp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Comp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Comp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Comp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Comp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Comp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Comp[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
