@@ -43,7 +43,8 @@ clkIn => cnt[12].CLK
 clkOut <= clkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Telemetre|CptNBitsNatTL:CntDist
+|Telemetre|CptNBitsNat:CntDist
+Clk => nReset_prec.CLK
 Clk => Q[0]~reg0.CLK
 Clk => Q[1]~reg0.CLK
 Clk => Q[2]~reg0.CLK
@@ -68,14 +69,8 @@ nSet => Q.OUTPUTSELECT
 nSet => Q.OUTPUTSELECT
 nSet => Q.OUTPUTSELECT
 nSet => Q.OUTPUTSELECT
-nReset => Q.OUTPUTSELECT
-nReset => Q.OUTPUTSELECT
-nReset => Q.OUTPUTSELECT
-nReset => Q.OUTPUTSELECT
-nReset => Q.OUTPUTSELECT
-nReset => Q.OUTPUTSELECT
-nReset => Q.OUTPUTSELECT
-nReset => Q.OUTPUTSELECT
+nReset => always0.IN1
+nReset => nReset_prec.DATAIN
 
 
 |Telemetre|Memoire:Mem
@@ -117,7 +112,7 @@ Comp[7] => LessThan0.IN9
 Out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Telemetre|SplitByDecTL:Spliter
+|Telemetre|Split8BitsBy3:Spliter
 Dist[0] => Div0.IN14
 Dist[0] => Add0.IN22
 Dist[1] => Div0.IN13

@@ -3,27 +3,27 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -2.625
-TNS   : -32.890
+Slack : -2.329
+TNS   : -29.885
 
 Type  : Slow 1200mV 85C Model Setup 'Telemetre:Tel|FreqDividerTL:Diviseur|clkOut'
-Slack : -1.839
-TNS   : -14.060
+Slack : -1.793
+TNS   : -14.304
 
 Type  : Slow 1200mV 85C Model Setup 'GPIO[0]'
-Slack : -1.804
-TNS   : -13.657
-
-Type  : Slow 1200mV 85C Model Hold 'Telemetre:Tel|FreqDividerTL:Diviseur|clkOut'
-Slack : -0.077
-TNS   : -0.110
-
-Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.556
+Slack : 0.193
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'GPIO[0]'
-Slack : 1.914
+Slack : -0.196
+TNS   : -0.247
+
+Type  : Slow 1200mV 85C Model Hold 'Telemetre:Tel|FreqDividerTL:Diviseur|clkOut'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.432
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
@@ -32,34 +32,34 @@ TNS   : -20.990
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GPIO[0]'
 Slack : -3.000
-TNS   : -13.280
+TNS   : -13.882
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Telemetre:Tel|FreqDividerTL:Diviseur|clkOut'
 Slack : -1.285
 TNS   : -11.565
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -2.317
-TNS   : -28.971
+Slack : -2.041
+TNS   : -26.150
 
 Type  : Slow 1200mV 0C Model Setup 'Telemetre:Tel|FreqDividerTL:Diviseur|clkOut'
-Slack : -1.567
-TNS   : -11.844
+Slack : -1.507
+TNS   : -12.059
 
 Type  : Slow 1200mV 0C Model Setup 'GPIO[0]'
-Slack : -1.460
-TNS   : -10.999
-
-Type  : Slow 1200mV 0C Model Hold 'Telemetre:Tel|FreqDividerTL:Diviseur|clkOut'
-Slack : -0.010
-TNS   : -0.010
-
-Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.516
+Slack : 0.300
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'GPIO[0]'
-Slack : 1.657
+Slack : -0.201
+TNS   : -0.342
+
+Type  : Slow 1200mV 0C Model Hold 'Telemetre:Tel|FreqDividerTL:Diviseur|clkOut'
+Slack : 0.352
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.392
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
@@ -75,36 +75,36 @@ Slack : -1.285
 TNS   : -11.565
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -0.704
-TNS   : -7.919
+Slack : -0.574
+TNS   : -6.652
 
 Type  : Fast 1200mV 0C Model Setup 'Telemetre:Tel|FreqDividerTL:Diviseur|clkOut'
-Slack : -0.367
-TNS   : -2.664
+Slack : -0.355
+TNS   : -2.796
 
 Type  : Fast 1200mV 0C Model Setup 'GPIO[0]'
-Slack : -0.174
-TNS   : -1.007
-
-Type  : Fast 1200mV 0C Model Hold 'Telemetre:Tel|FreqDividerTL:Diviseur|clkOut'
-Slack : -0.020
-TNS   : -0.020
-
-Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.227
+Slack : 0.968
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'GPIO[0]'
-Slack : 0.695
+Slack : -0.560
+TNS   : -3.709
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Telemetre:Tel|FreqDividerTL:Diviseur|clkOut'
+Slack : 0.284
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -22.058
+TNS   : -21.916
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GPIO[0]'
 Slack : -3.000
-TNS   : -14.679
+TNS   : -16.675
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Telemetre:Tel|FreqDividerTL:Diviseur|clkOut'
 Slack : -1.000

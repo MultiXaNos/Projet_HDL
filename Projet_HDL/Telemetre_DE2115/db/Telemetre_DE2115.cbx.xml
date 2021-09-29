@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="Telemetre_DE2115">
-		<CBX_INST_ENTRY INSTANCE_NAME="|Telemetre_DE2115|Telemetre:Tel|SplitByDecTL:Spliter|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_mhm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Telemetre_DE2115|Telemetre:Tel|SplitByDecTL:Spliter|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_0jm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Telemetre_DE2115|Telemetre:Tel|Split8BitsBy3:Spliter|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_mhm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Telemetre_DE2115|Telemetre:Tel|Split8BitsBy3:Spliter|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_0jm.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
