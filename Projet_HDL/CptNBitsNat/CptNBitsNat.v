@@ -28,7 +28,7 @@ begin
 		
 		if (nSet == SET_POLARITY)
 		begin 
-			Q <= 2**(OUTPUT_SIZE) - 1;
+			Q <= MODULO_VALUE - 1 ;
 		end
 		else
 			begin
